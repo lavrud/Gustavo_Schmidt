@@ -1,0 +1,1 @@
+$(".nav-pills a").click(function(){$(this).tab("show")}),$(document).ready(function(){$("#imageGallery").lightSlider({gallery:!0,item:1,loop:!0,thumbItem:9,slideMargin:0,enableDrag:!1,currentPagerPosition:"left",onSliderLoad:function(l){l.lightGallery({selector:"#imageGallery .lslide"})}})});

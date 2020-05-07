@@ -1,0 +1,135 @@
+/* --- Prefix Transitions --- */
+@mixin transition($transition...) {
+    -webkit-transition: all 0.2s $transition linear;
+    -moz-transition: all 0.2s $transition linear;
+    -o-transition: all 0.2s $transition linear;
+    transition: all 0.2s $transition linear;
+}
+
+/* --- Prefix Radius --- */
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+/* --- gradients --- */
+@mixin gradient($angle, $gradient1, $gradient2) {
+    background-color: $gradient2;
+    background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2));
+    background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2);
+    background-image: -moz-linear-gradient($angle, $gradient1, $gradient2);
+    background-image: -ms-linear-gradient($angle, $gradient1, $gradient2);
+    background-image: -o-linear-gradient($angle, $gradient1, $gradient2);
+    background-image: linear-gradient($angle, $gradient1, $gradient2);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}');
+}
+
+/* --- Calculate Rem --- */
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+
+    @return $remSize * 1rem;
+}
+
+/* --- Font-size Rem --- */
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+/* --- Opacity IE --- */
+@mixin opacity($opacity) {
+    opacity: $opacity;
+
+    $opacity-ie: $opacity * 100;
+
+    filter: alpha(opacity = $opacity-ie);
+}
+
+/* --- Background Color Opacity --- */
+@mixin background-opacity($color: $branco, $opacity: 0.85) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+/* --- Columns --- */
+@mixin columns($count: 3, $gap: 10) {
+    @include css3-prefix("column-count", $count);
+    @include css3-prefix("column-gap", $gap);
+}
+
+/* --- Contain floats / clearfix --- */
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+/* --- Center-Block --- */
+@mixin push-auto {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+/* --- Center-Text --- */
+@mixin middle-text {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -25%);
+}
+
+/* --- Placeholder --- */
+@mixin input-placeholder {
+    &.placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+/* --- Breakpoint --- */
+@mixin celular {
+    @media (max-width: #{$celular-sm}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet-md}) {
+        @content;
+    }
+}
+
+@mixin notebook {
+    @media (max-width: #{$notebook-lg}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: #{$desktop-xl}) {
+        @content;
+    }
+}
