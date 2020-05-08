@@ -1,3 +1,12 @@
+/* --- Prefix Browsers --- */
+@mixin flexbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 /* --- Prefix Transitions --- */
 @mixin transition($transition...) {
     -webkit-transition: all 0.2s $transition linear;

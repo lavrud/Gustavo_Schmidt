@@ -1,5 +1,5 @@
 html {
-  height: 5000px;
+  height: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -16,19 +16,4 @@ body {
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
   background: #ddd !important;
-}
-
-::selection {
-  background-color: #f8f8f8 !important;
-  color: #f8f8f8;
-}
-
--webkit-::selection {
-  background-color: #f8f8f8 !important;
-  color: #f8f8f8;
-}
-
-::-moz-selection {
-  background-color: #f8f8f8 !important;
-  color: #f8f8f8;
 }

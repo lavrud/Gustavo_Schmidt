@@ -1,0 +1,274 @@
+// Navbar
+#nav-menu {
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+}
+
+.active {
+    margin-left: 0px;
+    color: #f9c134 !important;
+    text-rendering: optimizeLegibility;
+}
+
+.nav-link {
+    font-size: 14px;
+    color: #233F94;
+    line-height: 1.2rem;
+    font-weight: bold;
+    letter-spacing: .8;
+    margin-left: 10px;
+    
+    &:hover {
+        color: #F9C134;
+        transition: .3s;
+    }
+}
+
+// Banner
+#banner-hero {
+    width: 100%;
+    height: 600px;
+    background: url('../../img/biden.jpg') center top no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+    z-index: -99;
+
+    h1 {
+        font-family: 'Jost', sans-serif;
+        font-size: 80px;
+        line-height: 80px;
+        text-transform: uppercase;
+        text-align: right;
+        color: #12204A;
+    }
+}
+
+// Stickys
+#sticky-hero {
+    margin-top: -80px;
+
+    .action-col {
+        padding: 40px;
+        background-color: #12204A;
+
+        h5,
+        p {
+            text-align: center;
+            color: #fff;
+        }
+    }
+
+    .action-title {
+        font-family: 'Jost', sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+// Sobre
+.about-border {
+    padding: 50px;
+    margin-top: 80px;
+    border: 5px solid #233F94;
+}
+
+.p-align {
+    margin: 1.5em 3em 2em 0;
+}
+
+.btn-metro {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 0;
+    background-color: #233F94;
+
+}
+
+// Mídia
+
+
+// alfkshadgljabglkjn
+#contato {
+    background-image: url('../../img/bg_contato.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    .form-contact {
+        padding: 40px;
+        // background-color: #c79f3a;
+        background-color: #f1f1f1;
+    }
+
+    label {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: #6c757d;
+        text-align: center;
+        position: relative;
+    }
+
+    input,
+    select,
+    textarea {
+        color: #000;
+        overflow: hidden;
+        border-width: 0 0 1px;
+        border-bottom-color: #ddd;
+    }
+}
+
+
+.shadow-title-sma {
+    left: 8%;
+    color: #000;
+    opacity: 0.035;
+    line-height: .8;
+    font-size: 8.8em;
+    font-weight: 700;
+    margin-top: 15px;
+    position: absolute;
+    transform: translate(-100%, -25%);
+
+    @include celular {
+        transform: translate(-58%, -85%);
+    }
+}
+
+.form-group {
+    label {
+        margin-left: 10px;
+        display: flex;
+        justify-items: flex-start;
+    }
+
+    .form-control {
+        border-radius: 0;
+        background-color: transparent;
+        border: 1px solid #6c757d;
+
+        @include input-placeholder {
+            font-size: 15px;
+            color: #6c757d;
+        }
+    }
+}
+
+.btn-outline-contact {
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid #333;
+    background:linear-gradient(to right, #414141, #000000);
+
+    &:hover {
+        color: #c5a47e;
+        border: 1px solid #c5a47e;
+        background-color: #f8f8f8;
+    }
+}
+
+/* ------------------------------------------------------------------------------- */
+/* Footer
+/* ------------------------------------------------------------------------------- */
+
+#footer {
+    padding: 2em 0 0 0;
+
+    .social-media {
+
+        h3 {
+            color: #fff;
+        }
+
+        p {
+            color: #333;
+        }
+
+        .fa {
+            margin: 0 1px;
+            padding: 8px;
+            font-size: 20px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .fa:hover {
+            opacity: 0.85;
+        }
+
+        .fa-facebook {
+            border: 1.35px solid #6c757d;
+            color: #6c757d;
+
+            &:hover {
+                border: 1.35px solid #c5a47e;
+                color: #c5a47e;
+            }
+        }
+
+        .fa-instagram {
+            border: 1.35px solid #6c757d;
+            color: #6c757d;
+
+            &:hover {
+                border: 1.35px solid #c5a47e;
+                color: #c5a47e;
+            }
+        }
+
+        .fa-whatsapp {
+            border: 1.35px solid #6c757d;
+            color: #6c757d;
+
+            &:hover {
+                border: 1.35px solid #c5a47e;
+                color: #c5a47e;
+            }
+        }
+    }
+
+    .brand-footer {
+        padding: 5px;
+        color: #333;
+        text-decoration: none;
+
+        .brand-name-footer {
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+
+    .newsletter .content {
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    .newsletter .content .form-control {
+        height: 40px;
+        border-color: #dddddd;
+        border-radius: 0;
+    }
+
+    .btn-outline-secondary {
+        border-radius: 0;
+        min-height: 40px;
+        font-weight: 600;
+
+        &:hover {
+            color: #c5a47e;
+            border: 1px solid #c5a47e;
+            background-color: #f8f8f8;
+        }
+    }
+}
