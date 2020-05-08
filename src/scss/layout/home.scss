@@ -19,7 +19,7 @@
     font-weight: bold;
     letter-spacing: .8;
     margin-left: 10px;
-    
+
     &:hover {
         color: #F9C134;
         transition: .3s;
@@ -90,7 +90,14 @@
 }
 
 // Mídia
-
+#media {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    background-image: url('https://coralreefpalau.org/wp-content/uploads/2017/03/blue-bg.jpg');
+    background-attachment: scroll;
+    background-size: cover;
+}
 
 // alfkshadgljabglkjn
 #contato {
@@ -165,7 +172,7 @@
     color: #fff;
     border-radius: 30px;
     border: 1px solid #333;
-    background:linear-gradient(to right, #414141, #000000);
+    background: linear-gradient(to right, #414141, #000000);
 
     &:hover {
         color: #c5a47e;
