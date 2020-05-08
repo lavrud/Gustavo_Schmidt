@@ -39,7 +39,7 @@ gulp.task('img', gulp.series(function () {
 gulp.task('watch', gulp.series(function () {
 	browserSync.init({
 		watch: true,
-		server: "./src"
+		server: "./"
 	});
 
 	gulp.watch('./src/*.html').on("change", reload);
