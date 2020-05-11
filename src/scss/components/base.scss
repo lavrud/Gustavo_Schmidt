@@ -1,5 +1,4 @@
 html {
-  height: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -7,6 +6,11 @@ html {
 
 body {
   background-color: #ffffff;
+
+  a{
+    color: #ffffff;
+    text-decoration: none;
+  }
 }
 
 ::-webkit-scrollbar {

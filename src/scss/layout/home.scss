@@ -37,12 +37,8 @@
     z-index: -99;
 
     h1 {
-        font-family: 'Jost', sans-serif;
-        font-size: 80px;
-        line-height: 80px;
-        text-transform: uppercase;
+        line-height: 90px;
         text-align: right;
-        color: #12204A;
     }
 }
 
@@ -81,11 +77,16 @@
 }
 
 .btn-metro {
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 14px;
-    font-weight: 600;
     border-radius: 0;
-    background-color: #233F94;
+    font-weight: 600;
+    background-color: #12204A;
+
+    &:hover {
+        color: #12204A;
+        background-color: #f9c134;
+    }
 
 }
 
@@ -94,23 +95,20 @@
     width: 100%;
     height: auto;
     margin-top: 80px;
-    background-image: url('https://coralreefpalau.org/wp-content/uploads/2017/03/blue-bg.jpg');
+    background-image: url('../img/bg-eleitores.jpg');
     background-attachment: scroll;
     background-size: cover;
+
+    figure {
+        display: block;
+    }
 }
 
-// alfkshadgljabglkjn
+// Newsletter
 #contato {
-    background-image: url('../img/bg_contato.png');
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-
     .form-contact {
-        padding: 40px;
-        // background-color: #c79f3a;
-        background-color: #f1f1f1;
+        padding: 80px;
+        background-color: #f9c134;
     }
 
     label {
@@ -128,7 +126,7 @@
         color: #000;
         overflow: hidden;
         border-width: 0 0 1px;
-        border-bottom-color: #ddd;
+        border-bottom-color: #12204A;
     }
 }
 
@@ -161,23 +159,23 @@
         background-color: transparent;
         border: 1px solid #6c757d;
 
-        @include input-placeholder {
+        @include placeholder {
             font-size: 15px;
-            color: #6c757d;
+            font-style: italic;
+            color: #12204A;
+            font-weight: 600;
         }
     }
 }
 
 .btn-outline-contact {
     color: #fff;
-    border-radius: 30px;
-    border: 1px solid #333;
-    background: linear-gradient(to right, #414141, #000000);
+    border-radius: 0;
+    border: none;
+    background-color: #12204A;
 
     &:hover {
-        color: #c5a47e;
-        border: 1px solid #c5a47e;
-        background-color: #f8f8f8;
+        color: #FFFFFF;
     }
 }
 
@@ -187,8 +185,11 @@
 
 #footer {
     padding: 2em 0 0 0;
+    background-color: #f8f8f8;
 
     .social-media {
+        @include pull-center;
+        padding-top: 3em;
 
         h3 {
             color: #fff;
@@ -199,7 +200,7 @@
         }
 
         .fa {
-            margin: 0 1px;
+            margin: 0 20px;
             padding: 8px;
             font-size: 20px;
             width: 40px;
@@ -211,39 +212,48 @@
             opacity: 0.85;
         }
 
-        .fa-facebook {
-            border: 1.35px solid #6c757d;
-            color: #6c757d;
-
-            &:hover {
-                border: 1.35px solid #c5a47e;
-                color: #c5a47e;
-            }
-        }
-
         .fa-instagram {
-            border: 1.35px solid #6c757d;
-            color: #6c757d;
+            font-size: 40px;
+            color: #12204A;
 
             &:hover {
-                border: 1.35px solid #c5a47e;
-                color: #c5a47e;
+                color: #f9c134;
             }
         }
 
-        .fa-whatsapp {
-            border: 1.35px solid #6c757d;
-            color: #6c757d;
+        .fa-facebook {
+            font-size: 40px;
+            color: #12204A;
 
             &:hover {
-                border: 1.35px solid #c5a47e;
-                color: #c5a47e;
+                color: #f9c134;
+            }
+        }
+
+        .fa-twitter {
+            font-size: 40px;
+            color: #12204A;
+
+            &:hover {
+                color: #f9c134;
+            }
+        }
+
+        .fa-youtube {
+            font-size: 40px;
+            color: #12204A;
+
+            &:hover {
+                color: #f9c134;
             }
         }
     }
 
+    .brand-panel-footer {
+        @include pull-center;
+    }
+
     .brand-footer {
-        padding: 5px;
         color: #333;
         text-decoration: none;
 
@@ -252,6 +262,7 @@
             text-align: center;
         }
     }
+
 
     .newsletter .content {
         max-width: 650px;

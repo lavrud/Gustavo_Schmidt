@@ -32,7 +32,7 @@
     background-image: -ms-linear-gradient($angle, $gradient1, $gradient2);
     background-image: -o-linear-gradient($angle, $gradient1, $gradient2);
     background-image: linear-gradient($angle, $gradient1, $gradient2);
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}');
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle, StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}');
 }
 
 /* --- Calculate Rem --- */
@@ -54,7 +54,7 @@
 
     $opacity-ie: $opacity * 100;
 
-    filter: alpha(opacity = $opacity-ie);
+    filter: alpha(opacity=$opacity-ie);
 }
 
 /* --- Background Color Opacity --- */
@@ -79,24 +79,31 @@
 }
 
 /* --- Center-Block --- */
-@mixin push-auto {
+@mixin center-block {
     margin: {
         left: auto;
         right: auto;
     }
 }
 
-/* --- Center-Text --- */
-@mixin middle-text {
+/* --- Vertical-Center --- */
+@mixin vertical-center {
     top: 50%;
     left: 50%;
     text-align: center;
     position: absolute;
-    transform: translate(-50%, -25%);
+    transform: translate(-50%, -50%);
+}
+
+/* Pull-Center */
+@mixin pull-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* --- Placeholder --- */
-@mixin input-placeholder {
+@mixin placeholder {
     &.placeholder {
         @content;
     }
