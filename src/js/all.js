@@ -1,1 +1,0 @@
-$(".nav-pills a").click(function(){$(this).tab("show")});
