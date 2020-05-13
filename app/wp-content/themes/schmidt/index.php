@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="<?php  ?>">
+<html <?php language_attributes(); ?>>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo Schmidt</title>
-    <link rel="stylesheet" href="./src/css/libs.css">
-    <link rel="stylesheet" href="./src/css/styles.css">
+    <title><?php bloginfo( 'name' ); echo " | "; bloginfo( 'description' ); ?></title>
+    <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/libs.css">
+    <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/styles.css">
+    <!-- <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>/style.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet">
 </head>
 
@@ -410,16 +411,16 @@
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="./src/js/libs/jquery.slim.min.js"></script>
+    <script src="<?php bloginfo( 'template_url' ); ?>/js/libs/jquery.slim.min.js"></script>
     <!-- popper -->
-    <script src="./src/js/libs/bootstrap.bundle.min.js"></script>
+    <script src="<?php bloginfo( 'template_url' ); ?>/js/libs/bootstrap.bundle.min.js"></script>
     <!-- bootstrap -->
-    <script src="./src/js/libs/bootstrap.min.js"></script>
+    <script src="<?php bloginfo( 'template_url' ); ?>/js/libs/bootstrap.min.js"></script>
 
     <!-- plugins-js -->
 
     <!-- custom-js -->
-    <script src="./src/js/all.js"></script> 
+    <script src="<?php bloginfo( 'template_url' ); ?>/js/all.js"></script> 
 
     <!-- Optional JavaScript -->
 </body>

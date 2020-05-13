@@ -1,0 +1,17 @@
+#timeline {
+    width: 100%;
+    height:500px;
+    margin-top: 40px;
+    background: linear-gradient(#233F94, #12204A);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+
+    @include celular {
+        height: 215px;
+        h2 {
+            font-size: 30px;
+        }
+    }
+}

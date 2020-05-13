@@ -1,0 +1,29 @@
+/* === BANNER-BANDEIRAS === */
+.bnr-txt-flags {
+    height: 440px;
+    margin-top: 5em;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url('https://www.romneyforutah.com/wp-content/uploads/2018/08/as-i-see-it_banner_v1.0.jpg');
+}
+
+
+
+
+
+
+/* === CHAMADAS-BANDEIRAS === */
+#flags {
+    .et_pb_row_0.et_pb_row {
+        margin-top: -200px!important;
+        padding: 50px;
+    }
+
+    .et_pb_row_0 {
+        background-color: #ffffff;
+        border-radius: 20px;
+        overflow: hidden;
+        z-index: 1;
+    }
+}

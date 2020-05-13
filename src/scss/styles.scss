@@ -4,6 +4,15 @@
 @import "./components/typography.scss";
 @import "./components/variables.scss";
 
+// Includes
+@import "./includes/header.scss";
+@import "./includes/footer.scss";
+
 // Layouts
 @import "./layout/home.scss";
 @import "./layout/conheca-deputado.scss";
+@import "./layout/bandeiras.scss";
+@import "./layout/atuacao.scss";
+@import "./layout/agenda.scss";
+@import "./layout/midia.scss";
+@import "./layout/participe.scss";

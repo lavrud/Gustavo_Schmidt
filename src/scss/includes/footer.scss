@@ -1,0 +1,104 @@
+/* === FOOTER === */
+#footer {
+    padding-top: 25px;
+    background-color: #FFFFFF;
+
+    .brand-footer {
+        @include pull-center;
+        margin-top: 50px;
+        text-decoration: none;
+
+        @include celular {
+            margin-top: 20px;
+
+        }
+    }
+
+    .address-footer {
+        font-size: 14px;
+        padding-top: 25px;
+        font-family: 'Jost', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #12204A;
+
+        @include celular {
+            font-size: 11.5px;
+            text-align: center;
+            padding-left: .5em;
+        }
+    }
+
+    .social-media {
+        @include pull-center;
+        padding-top: 50px;
+
+        h3 {
+            color: #fff;
+        }
+
+        p {
+            color: #333;
+        }
+
+        .fa {
+            margin: 0 20px;
+            padding: 8px;
+            font-size: 20px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .fa:hover {
+            opacity: 0.85;
+        }
+
+        .fa-instagram {
+            font-size: 40px;
+            color: #12204A;
+
+            &:hover {
+                color: #f9c134;
+            }
+        }
+
+        .fa-facebook {
+            font-size: 40px;
+            color: #12204A;
+
+            &:hover {
+                color: #f9c134;
+            }
+        }
+
+        .fa-twitter {
+            font-size: 40px;
+            color: #12204A;
+
+            &:hover {
+                color: #f9c134;
+            }
+        }
+
+        .fa-youtube {
+            font-size: 40px;
+            color: #12204A;
+
+            &:hover {
+                color: #f9c134;
+            }
+        }
+    }
+
+    .copyright {
+        color: #12204A;
+        text-align: center;
+        padding: 1rem;
+
+        @include celular {
+            font-size: 14px;
+        }
+    }
+}
