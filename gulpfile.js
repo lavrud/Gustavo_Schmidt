@@ -42,7 +42,7 @@ gulp.task('watch', gulp.series(function () {
 		server: "./"
 	});
 
-	gulp.watch('./src/*.html').on("change", reload);
+	gulp.watch('./*.html').on("change", reload);
 	gulp.watch('./src/scss/**/*.scss', gulp.parallel(['css'])).on("change", reload);
 	gulp.watch('./src/js/libs/*.js', gulp.parallel(['js'])).on("change", reload);
 }));

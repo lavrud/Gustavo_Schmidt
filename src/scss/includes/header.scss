@@ -17,15 +17,22 @@
     }
 }
 
+
+
+
+
 /* === BANNER === */
 #banner-hero {
     width: 100%;
-    height: 50em;
-    background: url('../img/biden.jpg');
+    height: 635px;
+    margin-top: 5em;
+    background: url('../img/foto.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
+    image-rendering: optimizeQuality;
+    image-rendering: optimizeSpeed;
 
     @include celular {
         width: 100%;
@@ -54,11 +61,9 @@
         }
     }
 
-    .text-one {
-        color: #233F94;
-    }
-
-    .text-two {
-        color: #12204A;
+    .text-slogan {
+        color: #FFFFFF;
+        text-shadow: 2px 2px #233F94;
+        // background-color: #233269;
     }
 }
