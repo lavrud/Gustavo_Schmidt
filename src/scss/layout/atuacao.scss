@@ -1,0 +1,32 @@
+/* === ÚLTIMAS-PROSPOSTAS === */
+.proporsal-title {
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.block-text {
+    font-size: 14px;
+    text-shadow: 1px 1px #273268;
+}
+
+.last-proporsal {
+    padding: 40px;
+    margin-top: 20px;
+    border: 5px solid #233F94;
+}
+
+.proporsal-gallery {
+    margin-bottom: 30px;
+}
+
+.proporsal-gallery .block-text {
+    top: 15px;
+    left: 25px;
+    margin: 0;
+    padding: 1em;
+    position: absolute;
+}
+
+.proporsal-gallery .block-text small {
+    display: block;
+}
