@@ -26,7 +26,7 @@
     width: 100%;
     height: 635px;
     margin-top: 5em;
-    background: url('../img/foto.svg');
+    background: url('../img/foto_gs.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,7 +42,7 @@
     }
 
     .text-banner {
-        padding-top: 33vh;
+        padding-top: 20vh;
 
         @include celular {
             padding-top: 18vh;
@@ -62,8 +62,8 @@
     }
 
     .text-slogan {
-        color: #FFFFFF;
-        text-shadow: 2px 2px #233F94;
-        // background-color: #233269;
+        color: #233F94;
+        text-shadow: 2px 2px #F9C134;
+        background-color: #F9C134;
     }
 }

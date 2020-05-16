@@ -7,9 +7,10 @@
     background: linear-gradient(to right, #2a5298, #1e3c72);
 
     .topic-flags {
-        @include vertical-center;
-        margin-top: -120px;
+        padding-top: 165px;
         color: #FFFFFF;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -18,13 +19,13 @@
 
 
 /* === CHAMADAS-BANDEIRAS === */
-#flags {
-    .box-flg {
+#box-rounded-area {
+    .box-area {
         margin-top: -200px !important;
         padding: 50px;
     }
 
-    .box-flg-row {
+    .box-area-row {
         background-color: #ffffff;
         border-radius: 20px;
         overflow: hidden;

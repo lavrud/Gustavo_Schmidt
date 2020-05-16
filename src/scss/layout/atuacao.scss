@@ -4,14 +4,16 @@
     text-transform: uppercase;
 }
 
-.block-text {
+.block-text h5 {
+    padding: .65em;
     font-size: 14px;
-    text-shadow: 1px 1px #273268;
+    color: #233F94;
+    background-color: rgba(249, 193, 52, 0.85);
 }
 
 .last-proporsal {
-    padding: 40px;
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 40px;
     border: 5px solid #233F94;
 }
 
@@ -20,10 +22,10 @@
 }
 
 .proporsal-gallery .block-text {
-    top: 15px;
-    left: 25px;
+    top: 0;
+    left: 15px;
     margin: 0;
-    padding: 1em;
+    padding: .35em;
     position: absolute;
 }
 
