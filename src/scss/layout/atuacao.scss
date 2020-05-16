@@ -32,3 +32,51 @@
 .proporsal-gallery .block-text small {
     display: block;
 }
+
+.nav-pills .nav-link.active {
+    border-radius: 0;
+    color: #fff !important;
+    background-color: #233F94;
+}
+
+.action-link {
+    width: 350px;
+    height: 120px;
+    padding: 40px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #12204A;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .description-l {
+        top: 65px;
+        left: 30px;
+        padding-right: 40px;
+        font-size: 12px;
+        text-decoration: none;
+        position: absolute;
+    }
+
+    .description-r {
+        top: 20px;
+        left: -15px;
+        margin-right: -45px;
+        font-size: 12px;
+        text-decoration: none;
+        position: relative;
+    }
+}
+
+.action-paragraph {
+    top: 25px;
+    left: 30px;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: 'Jost', sans-serif;
+}

@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require("gulp-uglify");
-var concat = require("gulp-concat");
 var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
@@ -17,7 +16,7 @@ gulp.task('css', gulp.series(function () {
 
 //js
 gulp.task('js', gulp.series(function () {
-	return gulp.src('./src/js/*.js')
+	return gulp.src('./src/js/custom/scripts.js')
 		.pipe(uglify())
 		.pipe(gulp.dest('src/js'));
 }));
@@ -44,7 +43,7 @@ gulp.task('watch', gulp.series(function () {
 
 	gulp.watch('./*.html').on("change", reload);
 	gulp.watch('./src/scss/**/*.scss', gulp.parallel(['css'])).on("change", reload);
-	gulp.watch('./src/js/**/*.js', gulp.parallel(['js'])).on("change", reload);
+	gulp.watch('./src/js/custom/scripts.js', gulp.parallel(['js'])).on("change", reload);
 }));
 
 //build

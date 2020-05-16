@@ -1,12 +1,12 @@
 /* === BANNER-BANDEIRAS === */
-.bnr-txt-flags {
+.bnr-tpc {
     height: 520px;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
     background: linear-gradient(to right, #2a5298, #1e3c72);
 
-    .topic-flags {
+    .ttl-tpc {
         padding-top: 165px;
         color: #FFFFFF;
         display: flex;
@@ -30,5 +30,21 @@
         border-radius: 20px;
         overflow: hidden;
         z-index: 1;
+    }
+
+    .action-col {
+        padding: 80px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #12204A;
+        border-radius: 5px;
+    }
+
+    .action-title {
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Jost', sans-serif;
     }
 }
