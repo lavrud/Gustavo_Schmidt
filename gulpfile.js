@@ -43,7 +43,7 @@ gulp.task('watch', gulp.series(function () {
 
 	gulp.watch('./*.html').on("change", reload);
 	gulp.watch('./src/scss/**/*.scss', gulp.parallel(['css'])).on("change", reload);
-	gulp.watch('./src/js/custom/scripts.js', gulp.parallel(['js'])).on("change", reload);
+	gulp.watch('./src/js/scripts.js', gulp.parallel(['js'])).on("change", reload);
 }));
 
 //build
