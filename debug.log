@@ -1,0 +1,23 @@
+[0520/005844.969:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0520/005844.969:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0520/005844.969:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0520/005844.969:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0520/005844.969:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0520/005844.969:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0520/005844.969:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0520/005844.969:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0520/005844.969:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0520/005844.969:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0520/005844.969:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0520/005844.969:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0520/005844.969:ERROR:process_reader_win.cc(151)] SuspendThread: Acesso negado. (0x5)
+[0520/005844.969:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0520/005844.985:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0520/005845.001:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0520/005845.001:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0520/005844.969:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0520/005845.001:ERROR:exception_snapshot_win.cc(98)] thread ID 116 not found in process
+[0520/005845.001:ERROR:exception_snapshot_win.cc(98)] thread ID 11868 not found in process
+[0520/005845.001:ERROR:exception_snapshot_win.cc(98)] thread ID 5156 not found in process
+[0520/005845.001:ERROR:exception_snapshot_win.cc(98)] thread ID 7396 not found in process
+[0520/005845.016:ERROR:exception_snapshot_win.cc(98)] thread ID 9000 not found in process

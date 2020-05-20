@@ -62,19 +62,21 @@
     }
 
     .action-col {
-        max-width: 370px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
         min-height: 150px;
         background-color: $yellow;
     }
 
     .action-title {
-        @include vertical-center;
-        color: $blue;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: $bold;
         font-family: '$poppins', sans-serif;
+        font-weight: $bold;
+        font-size: 20px;
+        color: $blue;
+        text-transform: uppercase;
+        text-align: center;
     }
 }
 
@@ -125,6 +127,10 @@ h2 {
         color: $yellow !important;
     }
 
+    h6 {
+        padding-bottom: 5px;
+    }
+
     a {
         text-decoration: none;
     }
@@ -133,8 +139,8 @@ h2 {
         display: block;
 
         img {
-            max-height: 300px;
             width: 100%;
+            max-height: 300px;
             display: block;
         }
 
@@ -145,8 +151,7 @@ h2 {
             font-size: 20px;
             line-height: 24px;
             letter-spacing: 0;
-            text-align: justify;
-            text-align-last: left;
+            text-align: left;
         }
 
         .figure-caption {
