@@ -1,6 +1,6 @@
 /* === FOOTER === */
 #footer {
-    padding-top: 5em;
+    padding-top: 3em;
     background-color: #FFFFFF;
 
     .brand-footer {
@@ -17,9 +17,8 @@
     .address-footer {
         font-size: 14px;
         padding-top: 25px;
-        font-family: 'Jost', sans-serif;
-        font-style: normal;
-        font-weight: 800;
+        font-family: $open, sans-serif;
+        font-weight: $normal;
         text-transform: uppercase;
         color: #12204A;
 
@@ -57,37 +56,37 @@
 
         .fa-instagram {
             font-size: 40px;
-            color: #12204A;
-
+            color: $yellow;
+            
             &:hover {
-                color: #f9c134;
+                color: $blue;
             }
         }
 
         .fa-facebook {
             font-size: 40px;
-            color: #12204A;
-
+            color: $yellow;
+            
             &:hover {
-                color: #f9c134;
+                color: $blue;
             }
         }
 
         .fa-twitter {
             font-size: 40px;
-            color: #12204A;
-
+            color: $yellow;
+            
             &:hover {
-                color: #f9c134;
+                color: $blue;
             }
         }
 
         .fa-youtube {
             font-size: 40px;
-            color: #12204A;
-
+            color: $yellow;
+            
             &:hover {
-                color: #f9c134;
+                color: $blue;
             }
         }
     }
@@ -95,7 +94,7 @@
     .copyright {
         color: #12204A;
         text-align: center;
-        padding: 1rem;
+        padding: 3rem 0 1em 0;
 
         @include celular {
             font-size: 14px;

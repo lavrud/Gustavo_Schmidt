@@ -4,66 +4,13 @@
 }
 
 .nav-link {
+    font-family: '$open', sans-serif;
+    color: $blue !important;
     font-size: 14px;
-    color: #233F94 !important;
-    line-height: 1.2rem;
-    font-weight: bold;
-    letter-spacing: .8;
-    margin-left: 10px;
+    margin-left: 15px;
 
     &:hover {
-        color: #F9C134 !important;
+        color: $yellow !important;
         transition: .3s;
-    }
-}
-
-
-
-
-
-/* === BANNER === */
-#banner-hero {
-    width: 100%;
-    height: 635px;
-    margin-top: 5em;
-    background: url('../img/foto_gs.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    image-rendering: optimizeQuality;
-    image-rendering: optimizeSpeed;
-
-    @include celular {
-        width: 100%;
-        height: 25em;
-        background-size: cover;
-        background-position: top;
-    }
-
-    .text-banner {
-        padding-top: 20vh;
-
-        @include celular {
-            padding-top: 18vh;
-            margin-top: 5em;
-        }
-    }
-
-    h1 {
-        line-height: 90px;
-        text-align: right;
-
-        @include celular {
-            font-size: 42px;
-            line-height: 42px;
-            text-align: left;
-        }
-    }
-
-    .text-slogan {
-        color: #233F94;
-        text-shadow: 2px 2px #F9C134;
-        background-color: #F9C134;
     }
 }

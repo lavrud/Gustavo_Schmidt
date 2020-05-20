@@ -1,3 +1,51 @@
+/* === BANNER === */
+.banner-dpt {
+    width: 100%;
+    height: 674px;
+    margin-top: 4em;
+    position: relative;
+    background: url('../img/bg-banner-deputado.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+
+    @include celular {
+        width: 100%;
+        height: 25em;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .text-banner {
+        padding-top: 245px;
+
+        @include celular {
+            padding-top: 18vh;
+            margin-top: 5em;
+        }
+    }
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        line-height: 77px;
+        text-align: right;
+
+        @include celular {
+            font-size: 42px;
+            line-height: 42px;
+            text-align: left;
+        }
+    }
+
+    .text-slogan {
+        color: $blue;
+    }
+}
+
+
+
 #timeline {
     width: 100%;
     height: 500px;
@@ -14,52 +62,5 @@
         h2 {
             font-size: 24px;
         }
-    }
-}
-
-/* === BANNER === */
-#banner-dpt {
-    width: 100%;
-    height: 635px;
-    margin-top: 5em;
-    background: url('../img/gs_foto.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    image-rendering: optimizeQuality;
-    image-rendering: optimizeSpeed;
-
-    @include celular {
-        width: 100%;
-        height: 25em;
-        background-size: cover;
-        background-position: top;
-    }
-
-    .text-banner-dpt {
-        padding-top: 20vh;
-
-        @include celular {
-            padding-top: 18vh;
-            margin-top: 5em;
-        }
-    }
-
-    h1 {
-        line-height: 90px;
-        text-align: right;
-
-        @include celular {
-            font-size: 42px;
-            line-height: 42px;
-            text-align: left;
-        }
-    }
-
-    .text-slogan-dpt {
-        color: #233F94;
-        text-shadow: 2px 2px #F9C134;
-        background-color: #F9C134;
     }
 }

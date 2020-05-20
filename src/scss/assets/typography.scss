@@ -1,0 +1,43 @@
+@import "./variables.scss";
+
+h1,
+h3,
+h5 {
+    font-family: $poppins;
+    font-weight: $bold;
+    color: $blue;
+}
+
+h2 {
+    font-family: $poppins;
+    font-weight: $bold;
+    font-size: 48px;
+    color: $blue;
+}
+
+h4 {
+    font-family: $open;
+    font-weight: $semi-bold;
+    font-size: 18px;
+    color: $yellow;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-family: $open;
+    font-weight: $normal;
+    font-size: 18px;
+    color: $yellow;
+}
+
+figcaption .figure-caption {
+    font-family: $poppins;
+    font-weight: $bold;
+    font-size: 24px;
+    color: $blue;
+}
+
+a.nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}

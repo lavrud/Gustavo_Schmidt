@@ -43,13 +43,13 @@ gulp.task('watch', gulp.series(function () {
 
 	gulp.watch('./*.html').on("change", reload);
 	gulp.watch('./src/scss/**/*.scss', gulp.parallel(['css'])).on("change", reload);
-	gulp.watch('./src/js/scripts.js', gulp.parallel(['js'])).on("change", reload);
+	gulp.watch('./src/js/**/*.js', gulp.parallel(['js'])).on("change", reload);
 }));
 
 //build
 gulp.task('build', gulp.series(function () {
 	return gulp.src('./src/**/*')
-		.pipe(gulp.dest(['./app/wp-content/themes/dist']));
+		.pipe(gulp.dest(['./app/wp-content/themes/']));
 }));
 
 //gulp-dev
