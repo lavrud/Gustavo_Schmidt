@@ -8,9 +8,7 @@ var reload = browserSync.reload;
 //css
 gulp.task('css', gulp.series(function () {
 	return gulp.src(['./src/scss/imports/libs.scss', './src/scss/styles.scss'])
-		.pipe(sass({
-			outputStyle: 'compressed'
-		}))
+		.pipe(sass())
 		.pipe(gulp.dest('src/css'));
 }));
 

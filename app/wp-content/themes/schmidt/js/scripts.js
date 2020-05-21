@@ -1,0 +1,1 @@
+$("ul>.pills-tab .nav-item .nav-link").on("click",function(n){n.preventDefault(),$(this).tab("show")});
