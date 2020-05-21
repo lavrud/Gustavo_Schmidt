@@ -124,6 +124,13 @@ a.nav-link {
   .btn-forms:hover {
     color: #FFFFFF; }
 
+.btn-link-clean {
+  color: #F1B948;
+  border: none;
+  border-radius: 2px; }
+  .btn-link-clean:hover {
+    color: #FFFFFF; }
+
 /* === NAVBAR === */
 .bg-white {
   background-color: #fff !important; }
@@ -306,7 +313,7 @@ h2 {
     display: block; }
     #media figure img {
       width: 100%;
-      max-height: 300px;
+      max-height: 350px;
       display: block; }
     #media figure figcaption {
       font-family: "Poppins", sans-serif;
@@ -494,7 +501,7 @@ h2 {
 
 #box-rounded-area .box-area-row {
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 0;
   overflow: hidden;
   z-index: 1; }
 
@@ -542,9 +549,8 @@ h2 {
 
 .block-text h5 {
   padding: .65em;
-  font-size: 14px;
-  color: #233F94;
-  background-color: rgba(249, 193, 52, 0.85); }
+  font-size: 24px;
+  color: #FFFFFF; }
 
 .last-proporsal {
   padding: 20px;
@@ -553,6 +559,9 @@ h2 {
 
 .proporsal-gallery {
   margin-bottom: 30px; }
+  .proporsal-gallery img {
+    width: 100%;
+    max-height: 400px; }
 
 .proporsal-gallery .block-text {
   top: 0;
