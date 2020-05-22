@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Schmidt</title>
+    <link rel="stylesheet" href="./src/css/libs.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <script src="https://kit.fontawesome.com/90bf33c535.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- MENU -->
+    <header id=#top>
+        <!-- Navitagation-Bar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow">
+
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="./index.html"><img src="./src/img/logo-gustavo.jpg" class="img-fluid"
+                        width="180" height="60" alt=""></a>
+
+                <!-- Button-Responsive -->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation-Responsive -->
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./conheca-deputado.html">Conheça o Deputado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./bandeiras.html">Bandeiras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./atuacao.html">Atuação</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./agenda.html">Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./midia.html">Mídia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./participe-mandato.html">Participe do Mandato</a>
+                        </li>
+                    </ul>
+                </div><!-- ./collapse -->
+
+            </div><!-- ./container -->
+
+        </nav><!-- ./navbar -->
+
+    </header><!-- ./header -->
+
+
+
+
+
+    <!-- BANNER-FLAGS -->
+    <div class="bnr-tpc">
+        <div class="container">
+            <h1 class="ttl-tpc">Agenda</h1>
+        </div>
+    </div><!-- banner-hero -->
+
+
+
+
+
+    <!-- PRÓXIMOS-EVENTOS -->
+    <section id="box-rounded-area">
+        <div class="container">
+            <div class="col-12 box-area box-area-row">
+
+                <div class="proporsal-title">
+                    <h2>próximos eventos</h2>
+                </div>
+
+                <div class="agenda-border">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-6 col-sm-12">
+                            <h4>sobre</h4>
+                            <h2 class="mb-2">lorem ipsum imet out sumot</h2>
+                            <p class="text-left mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab
+                                voluptates
+                                dicta dolore harum, deserunt expedita sequi tenetur amet atque aut. Voluptatem neque
+                                temporibus inventore laudantium beatae ipsam incidunt consequatur!</p>
+                            <a class="btn btn-metro" href="https://meet.google.com/" target="_blank"
+                                type="button">Conheça o
+                                Deputado</a>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12 d-none d-lg-block">
+                            <div class="img-fluid">
+
+                                <figure class="figure">
+                                    <img src="./src/img/bandeira_gustavojpg.jpg" class="figure-img img-fluid rounded"
+                                        alt="">
+                                    <figcaption class="figure-caption text-xs-right"></figcaption>
+                                </figure>
+
+                            </div><!-- ./embed-resposive -->
+                        </div><!-- ./col-lg-6 -->
+
+                    </div><!-- ./row -->
+
+                </div><!-- ./agenda-border-->
+
+
+
+                <div class="agenda-border">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-6 col-sm-12">
+                            <h4>sobre</h4>
+                            <h2 class="mb-2">lorem ipsum imet out sumot</h2>
+                            <p class="text-left mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab
+                                voluptates
+                                dicta dolore harum, deserunt expedita sequi tenetur amet atque aut. Voluptatem neque
+                                temporibus inventore laudantium beatae ipsam incidunt consequatur!</p>
+                            <a class="btn btn-metro" href="https://meet.google.com/" target="_blank"
+                                type="button">Conheça o
+                                Deputado</a>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12 d-none d-lg-block">
+                            <div class="img-fluid">
+
+                                <figure class="figure">
+                                    <img src="./src/img/bandeira_gustavojpg.jpg" class="figure-img img-fluid rounded"
+                                        alt="">
+                                    <figcaption class="figure-caption text-xs-right"></figcaption>
+                                </figure>
+
+                            </div><!-- ./embed-resposive -->
+                        </div><!-- ./col-lg-6 -->
+
+                    </div><!-- ./row -->
+
+                </div><!-- ./agenda-border-->
+
+
+
+                <div class="agenda-border">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-6 col-sm-12">
+                            <h4>sobre</h4>
+                            <h2 class="mb-2">lorem ipsum imet out sumot</h2>
+                            <p class="text-left mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab
+                                voluptates
+                                dicta dolore harum, deserunt expedita sequi tenetur amet atque aut. Voluptatem neque
+                                temporibus inventore laudantium beatae ipsam incidunt consequatur!</p>
+                            <a class="btn btn-metro" href="https://meet.google.com/" target="_blank"
+                                type="button">Conheça o
+                                Deputado</a>
+                        </div>
+
+                        <div class="col-lg-6 col-sm-12 d-none d-lg-block">
+                            <div class="img-fluid">
+
+                                <figure class="figure">
+                                    <img src="./src/img/bandeira_gustavojpg.jpg" class="figure-img img-fluid rounded"
+                                        alt="">
+                                    <figcaption class="figure-caption text-xs-right"></figcaption>
+                                </figure>
+
+                            </div><!-- ./embed-resposive -->
+                        </div><!-- ./col-lg-6 -->
+
+                    </div><!-- ./row -->
+
+                </div><!-- ./agenda-border-->
+
+                <div class="d-flex justify-content-center pt-2">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                        </ol>
+                    </nav>
+                </div>
+
+            </div><!-- ./box-flags -->
+        </div><!-- ./container -->
+    </section>
+
+
+
+
+
+    <!-- BOX-AGENDA -->
+    <section id="flags">
+        <div class="container pb-5">
+
+            <h4 class="text-center pt-5">bandeiras</h4>
+            <h2 class="text-center pb-3">lorem ipsum imet out sumot</h2>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="http://">
+                        <figure class="figure shadow mb-5">
+
+                            <img class="img-flags img-fluid" alt="" src="./src/img/bandeira_gustavojpg.jpg">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <figcaption class="legend-flags figure-caption text-justify text-dark">
+                                    <h6>Data da publicação</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed</p>
+                                    <p>Ler mais <i class="fa fa-long-arrow-right ml-2" style="color: #233F94;"
+                                            aria-hidden="true"></i></p>
+                                </figcaption>
+                            </div>
+
+                        </figure>
+                    </a>
+                </div><!-- ./col-sm-4 -->
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="http://">
+                        <figure class="figure shadow mb-5">
+
+                            <img class="img-flags img-fluid" alt="" src="./src/img/bandeira_gustavojpg.jpg">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <figcaption class="legend-flags figure-caption text-justify text-dark">
+                                    <h6>Data da publicação</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed</p>
+                                    <p>Ler mais <i class="fa fa-long-arrow-right ml-2" style="color: #233F94;"
+                                            aria-hidden="true"></i></p>
+                                </figcaption>
+                            </div>
+
+                        </figure>
+                    </a>
+                </div><!-- ./col-lg-4 -->
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="http://">
+                        <figure class="figure shadow mb-5">
+
+                            <img class="img-flags img-fluid" alt="" src="./src/img/bandeira_gustavojpg.jpg">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <figcaption class="legend-flags figure-caption text-justify text-dark">
+                                    <h6>Data da publicação</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed</p>
+                                    <p>Ler mais <i class="fa fa-long-arrow-right ml-2" style="color: #233F94;"
+                                            aria-hidden="true"></i></p>
+                                </figcaption>
+                            </div>
+
+                        </figure>
+                    </a>
+                </div><!-- ./col-sm-4 -->
+
+                <a class="btn btn-metro shadow mx-auto my-auto" href="https://" target="_blank" type="button">Ver
+                    Todas</a>
+
+            </div><!-- ./row -->
+        </div><!-- ./container -->
+    </section><!-- ./flags-->
+
+
+
+
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-6">
+
+                    <a href="#top" class="brand-footer img-fluid">
+                        <img src="./src/img/logo-footer.jpg" alt="">
+                    </a>
+
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+
+                    <div class="address-footer">
+                        <span>TELEFONE</span><br />
+                        <small>21</small>&nbsp;<span><strong>2588.1284 | 97004.3544</strong></span>
+                        <div>&nbsp;</div>
+                        <span>ENDEREÇO</span>
+                        <p>palácio 23 de julho, s/nº Gab, 107, praça XV.
+                            Centro, Rio de janeiro/RJ CEP 20.010-090
+                        </p>
+                    </div>
+
+                </div><!-- ./col-lg-4 -->
+
+                <div class="col-lg-4 col-sm-12">
+
+                    <div class="social-media">
+
+                        <div class="content d-flex justify-content-center">
+
+                            <a href="http://" target="_blank" class="fa fa-instagram"></a>
+                            <a href="http://" target="_blank" class="fa fa-facebook"></a>
+                            <a href="http://" target="_blank" class="fa fa-twitter"></a>
+                            <a href="http://" target="_blank" class="fa fa-youtube"></a>
+
+                        </div><!-- ./content -->
+                    </div><!-- ./social-media -->
+
+                </div><!-- ./col-lg-4 -->
+            </div><!-- ./row -->
+        </div><!-- ./container-fluid -->
+
+        <div class="copyright display-5 ">
+            2020 |&nbsp;Todos direitos reservados - CACO Produtora Digital
+        </div>
+    </div><!-- ./footer -->
+
+    <!-- bootstrap -->
+    <script src="./src/js/libs/jquery.slim.min.js"></script>
+    <script src="./src/js/libs/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/libs/bootstrap.min.js"></script>
+    <!-- custom-js -->
+    <script src="./src/js/scripts.js"></script>
+</body>
+
+</html>

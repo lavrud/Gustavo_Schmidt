@@ -44,9 +44,11 @@
         </div><!-- ./container-fluid -->
 
         <div class="copyright display-5 ">
-            2020 |&nbsp;Todos direitos reservados - CACO Produtora Digital
+            <?php echo date( 'Y' ); ?> | Todos direitos reservados - CACO Produtora Digital
         </div>
     </div><!-- ./footer -->
+
+    <?php wp_footer(); ?>
 
     <!-- bootstrap -->
     <script src="<?php bloginfo( 'template_url' ); ?>/js/libs/jquery.slim.min.js"></script>
@@ -54,8 +56,6 @@
     <script src="<?php bloginfo( 'template_url' ); ?>/js/libs/bootstrap.min.js"></script>
     <!-- custom-js -->
     <script src="<?php bloginfo( 'template_url' ); ?>/js/scripts.js"></script>
-
-    <?php wp_footer(); ?>
 </body>
 
 </html>

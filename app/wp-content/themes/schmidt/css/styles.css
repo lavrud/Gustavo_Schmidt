@@ -196,6 +196,7 @@ a.nav-link {
     font-weight: 600;
     padding: 10px 30px;
     border-radius: 2px;
+    transition: .5s;
     background-color: #F1B948
 }
 

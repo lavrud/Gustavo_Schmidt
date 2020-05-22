@@ -23,8 +23,10 @@
             <div class="container">
 
                 <!-- Logo -->
-                <a class="navbar-brand" href="./index.html"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo-gustavo.jpg" class="img-fluid"
-                        width="180" height="60" alt=""></a>
+                <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
+                    <img src="<?php bloginfo( 'template_url' ); ?>/img/logo-gustavo.jpg" class="img-fluid" width="180"
+                        height="60" alt="">
+                </a>
 
                 <!-- Button-Responsive -->
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -35,24 +37,18 @@
                 <!-- Navigation-Responsive -->
                 <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./conheca-deputado.html">Conheça o Deputado</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./bandeiras.html">Bandeiras</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./atuacao.html">Atuação</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./agenda.html">Agenda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./midia.html">Mídia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./participe-mandato.html">Participe do Mandato</a>
-                        </li>
+                        <?php
+                            wp_nav_menu( array(
+                                'theme_location'    => 'navbar_menu',
+                                'depth'             => 2,
+                                'container'         => 'ul',
+                                'container_class'   => 'collapse navbar-collapse',
+                                'container_id'      => 'bs-example-navbar-collapse-1',
+                                'menu_class'        => 'nav navbar-nav',
+                                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                                'walker'            => new WP_Bootstrap_Navwalker(),
+                            ) );
+                        ?>
                     </ul>
                 </div><!-- ./collapse -->
 
