@@ -17,4 +17,6 @@ app/wp-mail.php
 app/wp-settings.php
 app/wp-signup.php
 app/wp-trackback.php
+app/wp-config.php
 app/xmlrpc.php
+.vscode
