@@ -215,6 +215,9 @@ a.nav-link {
       #footer .copyright {
         font-size: 14px; } }
 
+body > .container {
+  margin-top: 77px; }
+
 /* === BANNER === */
 .banner-hero {
   width: 100%;
@@ -261,19 +264,23 @@ a.nav-link {
   .sticky-hero a {
     text-decoration: none; }
   .sticky-hero .action-col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    min-height: 150px;
-    background-color: #F1B948; }
-  .sticky-hero .action-title {
-    font-family: '$poppins', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    color: #26325C;
-    text-transform: uppercase;
-    text-align: center; }
+    width: 100%; }
+    .sticky-hero .action-col button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      min-height: 150px;
+      background-color: #F1B948;
+      font-family: '$poppins', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      color: #26325C;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 0;
+      z-index: 999; }
 
 /* === SOBRE === */
 .about-border {

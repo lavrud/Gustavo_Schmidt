@@ -1,3 +1,9 @@
+body {
+    > .container {
+        margin-top: 77px;
+    }
+}
+
 /* === BANNER === */
 .banner-hero {
     width: 100%;
@@ -62,21 +68,24 @@
     }
 
     .action-col {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 40px;
-        min-height: 150px;
-        background-color: $yellow;
-    }
-
-    .action-title {
-        font-family: '$poppins', sans-serif;
-        font-weight: $bold;
-        font-size: 20px;
-        color: $blue;
-        text-transform: uppercase;
-        text-align: center;
+        width: 100%;
+        button {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            min-height: 150px;
+            background-color: $yellow;
+            font-family: '$poppins', sans-serif;
+            font-weight: $bold;
+            font-size: 20px;
+            color: $blue;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 0;
+            z-index: 999;
+        }
     }
 }
 

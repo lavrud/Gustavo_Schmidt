@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/libs.css">
     <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/styles.css">
     <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
-    <script src="https://kit.fontawesome.com/90bf33c535.js" crossorigin="anonymous"></script>
 
     <?php wp_head(); ?>
+    <script src="https://kit.fontawesome.com/90bf33c535.js" crossorigin="anonymous"></script>
 
 </head>
 

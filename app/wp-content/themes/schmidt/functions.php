@@ -8,3 +8,7 @@ register_nav_menus(
          'navbar_menu'     =>  __('Menu principal', 'schmidt'),
      )   
 );
+
+show_admin_bar(false);
+
+add_filter('use_block_editor_for_post', '__return_false', 10);

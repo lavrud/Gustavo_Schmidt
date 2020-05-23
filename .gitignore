@@ -19,4 +19,5 @@ app/wp-signup.php
 app/wp-trackback.php
 app/wp-config.php
 app/xmlrpc.php
+app/wp-content/themes/schmidt/scss
 .vscode

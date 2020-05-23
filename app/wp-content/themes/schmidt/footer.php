@@ -20,7 +20,7 @@
                         <span>ENDEREÇO</span>
                         <p>palácio 23 de julho, s/nº Gab, 107, praça XV.
                             Centro, Rio de janeiro/RJ CEP 20.010-090
-                        </p>
+                        </p>z
                     </div>
 
                 </div><!-- ./col-lg-4 -->
@@ -51,7 +51,7 @@
     <?php wp_footer(); ?>
 
     <!-- bootstrap -->
-    <script src="<?php bloginfo( 'template_url' ); ?>/js/libs/jquery.slim.min.js"></script>
+    <!-- <script src="<?php bloginfo( 'template_url' ); ?>/js/libs/jquery.slim.min.js"></script> -->
     <script src="<?php bloginfo( 'template_url' ); ?>/js/libs/bootstrap.bundle.min.js"></script>
     <script src="<?php bloginfo( 'template_url' ); ?>/js/libs/bootstrap.min.js"></script>
     <!-- custom-js -->

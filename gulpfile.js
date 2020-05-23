@@ -47,7 +47,7 @@ gulp.task('watch', gulp.series(function () {
 //build
 gulp.task('build', gulp.series(function () {
 	return gulp.src('./src/**/*')
-		.pipe(gulp.dest(['./app/wp-content/themes/']));
+		.pipe(gulp.dest(['./app/wp-content/themes/schmidt']));
 }));
 
 //gulp-dev
