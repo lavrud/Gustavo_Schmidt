@@ -46,3 +46,38 @@ h2 {
         min-height: 1px;
     }
 }
+
+/* === CONHEÇA-MINHAS-PROPOSTAS === */
+.proporsal-box {
+    padding: 30px;
+    margin-right: 40px;
+    border: 1px solid $yellow;
+
+    p {
+        color: $blue;
+        font-weight: bold;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    i {
+        color: $yellow;
+    }
+
+    &:hover {
+        transition: .5s;
+
+        p {
+            color: $white;
+        }
+
+        background-color: #26325C;
+    }
+
+    @include celular {
+        margin-top: 30px;
+        margin-right: 0;
+    }
+}
