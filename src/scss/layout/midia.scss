@@ -1,0 +1,48 @@
+/* === BOX-MÍDIA === */
+.media-box {
+    padding: 40px;
+    margin: 80px 0 80px 0;
+
+    @include celular {
+        margin-top: 40px;
+    }
+}
+
+h2 {
+    font-size: 48px
+}
+
+.p-align {
+    margin: 1.5em 3em 2em 0;
+}
+
+
+/* === GALERIA-VIDEOS === */
+#media-videos {
+    .legend-media-videos {
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding: 1.25rem .5em;
+        font-size: 14px;
+    }
+
+    i {
+        color: $yellow;
+    }
+
+    figcaption {
+        font-family: $poppins;
+        font-weight: $bold;
+        color: $blue;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0;
+        text-align: justify;
+        text-align-last: left;
+    }
+
+    .figure-caption {
+        flex: 1 1 auto;
+        min-height: 1px;
+    }
+}

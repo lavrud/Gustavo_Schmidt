@@ -72,6 +72,12 @@ h2 {
   font-size: 48px;
   color: #26325C; }
 
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #26325C; }
+
 h4 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -483,14 +489,14 @@ h2 {
 /* === BANNER-BANDEIRAS === */
 .bnr-tpc {
   height: 520px;
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  background: linear-gradient(to right, #2a5298, #1e3c72); }
+  background-image: url("../img/bg-page-title.jpg"); }
   .bnr-tpc .ttl-tpc {
     display: flex;
     font-size: 64px;
-    color: #FFFFFF;
+    color: #26325C;
     padding-top: 165px;
     justify-content: center; }
 
@@ -505,6 +511,7 @@ h2 {
   overflow: hidden;
   z-index: 1; }
 
+/* === GALERIA-BANDEIRAS === */
 .gallery ul li {
   overflow: hidden; }
   .gallery ul li figure {
@@ -521,18 +528,17 @@ h2 {
     z-index: 2;
     color: #FFFFFF;
     width: 100%;
-    top: 40%;
+    top: 45%;
     opacity: 0; }
   .gallery ul li figcaption h3 {
+    color: #F1B948;
     font-size: 22px;
     margin: 0; }
-  .gallery ul li figcaption p {
-    font-size: 18px; }
   .gallery ul li figcaption a,
   .gallery ul li figcaption .overlay {
     transition: .8s; }
   .gallery ul li figcaption .overlay {
-    background-image: linear-gradient(60deg, #26325C, #F1B948);
+    background-image: linear-gradient(60deg, #26325C, #000000);
     opacity: .8;
     position: absolute;
     left: 0;
@@ -541,6 +547,10 @@ h2 {
     display: block;
     width: 100%;
     height: 100%; }
+
+/* === CONHEÇA-MINHAS-PROPOSTAS === */
+i {
+  color: #F1B948; }
 
 /* === ÚLTIMAS-PROSPOSTAS === */
 .proporsal-title {
@@ -612,6 +622,7 @@ h2 {
   text-transform: uppercase;
   font-family: 'Jost', sans-serif; }
 
+/* === TODAS-PROPOSIÇÕES === */
 .agenda-border {
   padding: 50px;
   margin-top: 30px;
@@ -640,3 +651,41 @@ h2 {
   padding-right: .5rem;
   color: #26325C !important;
   content: ""; }
+
+/* === BOX-MÍDIA === */
+.media-box {
+  padding: 40px;
+  margin: 80px 0 80px 0; }
+  @media (max-width: 576px) {
+    .media-box {
+      margin-top: 40px; } }
+
+h2 {
+  font-size: 48px; }
+
+.p-align {
+  margin: 1.5em 3em 2em 0; }
+
+/* === GALERIA-VIDEOS === */
+#media-videos .legend-media-videos {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem .5em;
+  font-size: 14px; }
+
+#media-videos i {
+  color: #F1B948; }
+
+#media-videos figcaption {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #26325C;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: justify;
+  text-align-last: left; }
+
+#media-videos .figure-caption {
+  flex: 1 1 auto;
+  min-height: 1px; }

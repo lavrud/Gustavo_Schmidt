@@ -1,15 +1,15 @@
 /* === BANNER-BANDEIRAS === */
 .bnr-tpc {
     height: 520px;
-    background-size: contain;
+    background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    background: linear-gradient(to right, #2a5298, #1e3c72);
+    background-image: url('../img/bg-page-title.jpg');
 
     .ttl-tpc {
         display: flex;
         font-size: 64px;
-        color: #FFFFFF;
+        color: $blue;
         padding-top: 165px;
         justify-content: center;
     }
@@ -34,22 +34,9 @@
     }
 }
 
-// .action-col {
-//     padding: 80px;
-//     text-align: center;
-//     text-decoration: none;
-//     background-color: #12204A;
-//     border-radius: 5px;
-// }
 
-// .action-title {
-//     color: #fff;
-//     font-size: 14px;
-//     text-align: center;
-//     text-transform: uppercase;
-//     font-family: 'Jost', sans-serif;
-// }
 
+/* === GALERIA-BANDEIRAS === */
 .gallery {
     ul {
 
@@ -79,17 +66,14 @@
                     z-index: 2;
                     color: $white;
                     width: 100%;
-                    top: 40%;
+                    top: 45%;
                     opacity: 0;
                 }
 
                 h3 {
+                    color: $yellow;
                     font-size: 22px;
                     margin: 0;
-                }
-
-                p {
-                    font-size: 18px;
                 }
 
                 a,
@@ -98,7 +82,7 @@
                 }
 
                 .overlay {
-                    background-image: linear-gradient(60deg, $blue, $yellow);
+                    background-image: linear-gradient(60deg, $blue, $black);
                     opacity: .8;
                     position: absolute;
                     left: 0;
@@ -111,4 +95,11 @@
             }
         }
     }
+}
+
+
+/* === CONHEÇA-MINHAS-PROPOSTAS === */
+
+i {
+    color: $yellow;
 }
