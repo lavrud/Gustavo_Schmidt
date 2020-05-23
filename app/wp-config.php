@@ -69,6 +69,7 @@ define( 'NONCE_SALT',       '.uLSqk!-=7g0H^sMuD+efgh:ssmo1uSI;N{ZB?PxQ__3vXJGwx~
  */
 $table_prefix = 'wp_';
 
+
 /**
  * Para desenvolvedores: Modo de debug do WordPress.
  *
