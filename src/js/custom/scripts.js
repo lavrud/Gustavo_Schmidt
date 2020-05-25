@@ -1,21 +1,11 @@
-// $('ul>.pills-tab .nav-item .nav-link').on('click', function showtabs(e) {
-//     e.preventDefault()
-//     $(this).tab('show')
-// })
+$(".next").click(function () {
 
+    var tab = $(this).closest('.tab-pane');
 
-$(document).ready(function () {
+    $('#' + tab[0].id + ', .nav-pills li').removeClass('active');
 
-    $(".next").click(function () {
+    $('.nav-pills li a[href="#' + tab.next()[0].id + '"]').parent().addClass('active');
 
-        var tab = $(this).closest('.tab-pane');
+    tab.next().addClass('active');
 
-        $('#' + tab[0].id + ', .nav-pills li').removeClass('active');
-
-        $('.nav-pills li a[href="#' + tab.next()[0].id + '"]').parent().addClass('active');
-
-        tab.next().addClass('active');
-
-    });
-    
 });

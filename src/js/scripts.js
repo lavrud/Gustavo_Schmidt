@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".next").click(function(){var a=$(this).closest(".tab-pane");$("#"+a[0].id+", .nav-pills li").removeClass("active"),$('.nav-pills li a[href="#'+a.next()[0].id+'"]').parent().addClass("active"),a.next().addClass("active")})});
+$(".next").click(function(){var a=$(this).closest(".tab-pane");$("#"+a[0].id+", .nav-pills li").removeClass("active"),$('.nav-pills li a[href="#'+a.next()[0].id+'"]').parent().addClass("active"),a.next().addClass("active")});
