@@ -85,3 +85,20 @@
     text-transform: uppercase;
     font-family: 'Jost', sans-serif;
 }
+
+.filter-atuacao {
+    float: right;
+    li {
+        display: inline-block;
+        margin-left: 10px;
+        padding: 3px 10px;
+        border: 1px solid #F1B948;
+
+        &.active {
+            background-color: #F1B948;
+        }
+    }
+    ul, span {
+        display: inline-block;
+    }
+}

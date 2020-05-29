@@ -281,3 +281,30 @@ h2 {
         }
     }
 }
+
+.home {
+    .vc_gitem_row > .vc_gitem-col > div:last-child {
+        display: none;
+    }
+
+    .vc_gitem-zone .vc_gitem-col {
+        padding: 40px !important;
+    }
+
+    .post-cat {
+        font-family: $open;
+        font-weight: $normal;
+        font-size: 18px;
+        color: $yellow;
+        text-align: left !important;
+        margin-bottom: 10px !important;
+    }
+
+    .post-title h4 {
+        font-family: $poppins;
+        font-weight: $bold;
+        font-size: 20px;
+        color: $blue;
+        text-transform: none !important;
+    }
+}

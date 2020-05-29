@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package wp_vulken
+ * @package wp
  */
 
 ?>
@@ -25,13 +25,13 @@
 
 			if ( 'post' === get_post_type() ) : ?>
 			<div class="entry-meta text-muted">
-				<?php wp_vulken_posted_on(); ?>
+				<?php wp_posted_on(); ?>
 			</div><!-- .entry-meta -->
 			<?php
 			endif; ?>
 		</header><!-- .entry-header -->
 
-		<?php wp_vulken_post_thumbnail(); ?>
+		<?php wp_post_thumbnail(); ?>
 
 		<?php if( is_singular() || get_theme_mod( 'default_blog_display', 'excerpt' ) === 'full' ) : ?>
 			<div class="entry-content">
@@ -69,7 +69,7 @@
 
 	<?php if ( 'post' === get_post_type() ) : ?>
 		<footer class="entry-footer card-footer text-muted">
-			<?php wp_vulken_entry_footer(); ?>
+			<?php wp_entry_footer(); ?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>
 

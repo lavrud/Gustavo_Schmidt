@@ -1,17 +1,23 @@
 /* === BANNER-BANDEIRAS === */
 .bnr-tpc {
-    height: 520px;
+    height: 443px;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
-    background: linear-gradient(to right, #2a5298, #1e3c72);
+    // background: linear-gradient(to right, #2a5298, #1e3c72);
+    background-image: url('../img/bg-page-title.jpg');
+    background-size: cover;
 
     .ttl-tpc {
         display: flex;
         font-size: 64px;
-        color: #FFFFFF;
-        padding-top: 165px;
+        color: #26325C;
+        padding-top: 88px;
         justify-content: center;
+    }
+
+    .wpb_button, .wpb_content_element, ul.wpb_thumbnails-fluid>li {
+        margin-bottom: 0 !important;
     }
 }
 

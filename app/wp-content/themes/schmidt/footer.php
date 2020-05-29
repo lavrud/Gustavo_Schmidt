@@ -20,7 +20,7 @@
                         <span>ENDEREÇO</span>
                         <p>palácio 23 de julho, s/nº Gab, 107, praça XV.
                             Centro, Rio de janeiro/RJ CEP 20.010-090
-                        </p>z
+                        </p>
                     </div>
 
                 </div><!-- ./col-lg-4 -->
