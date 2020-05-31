@@ -9,7 +9,8 @@ var reload = browserSync.reload;
 gulp.task('css', gulp.series(function () {
 	return gulp.src(['./src/scss/imports/libs.scss', './src/scss/styles.scss'])
 		.pipe(sass())
-		.pipe(gulp.dest('src/css'));
+		.pipe(gulp.dest('src/css'))
+		.pipe(gulp.dest(['./app/wp-content/themes/schmidt/css']));;
 }));
 
 //js

@@ -6,3 +6,7 @@ Description: Website sobre Candidatura Política.
 Version: 1.0
 Text Domain: deputado-schmidt
 */
+
+.first-atuaction-post .vc_grid-item {
+    width: 100% !important;
+}

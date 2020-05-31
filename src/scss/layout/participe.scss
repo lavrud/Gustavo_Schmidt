@@ -1,0 +1,83 @@
+.participe-form {
+    input[type=email], input[type=tel] {
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        height: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    input[type=submit] {
+        color: #26325C !important;
+        font-family: "Open Sans", sans-serif !important;
+        font-weight: 600;
+        font-size: 18px;
+        border: 1px solid #F1B948;
+        border-radius: 0;
+        background-color: #F1B948 !important;
+        padding: 10px 30px;
+
+        &:hover {
+            color: #F1B948 !important;
+            background-color: #26325C !important;
+            border-color: #26325C;
+        }
+    }
+}
+
+.contact-form {
+    text-align: center;
+    input {
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        height: 40px;
+        width: 100%;
+        max-width: 550px;
+        margin-bottom: 20px !important;
+        background-color: transparent !important;
+    }
+
+    textarea {
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        width: 100%;
+        max-width: 550px;
+        margin-bottom: 20px !important;
+        background-color: transparent !important;
+    }
+
+    input[type=submit] {
+        color: #F1B948 !important;
+        font-family: "Open Sans", sans-serif !important;
+        font-weight: 600;
+        font-size: 18px;
+        border: 1px solid #26325C;
+        border-radius: 0;
+        background-color: #26325C !important;
+        padding: 10px 30px;
+        text-align: center;
+        max-width: 120px;
+
+        &:hover {
+            color: #26325C !important;
+            background-color: #F1B948 !important;
+            border-color: #F1B948;
+        }
+    }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+  }

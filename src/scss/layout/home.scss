@@ -77,7 +77,7 @@ body {
             padding: 40px;
             min-height: 150px;
             background-color: $yellow;
-            font-family: '$poppins', sans-serif;
+            font-family: $poppins;
             font-weight: $bold;
             font-size: 20px;
             color: $blue;
@@ -85,6 +85,11 @@ body {
             text-align: center;
             border-radius: 0;
             z-index: 999;
+
+            &:hover {
+                background-color: $yellow;
+                color: $blue;
+            }
         }
     }
 }
@@ -306,5 +311,43 @@ h2 {
         font-size: 20px;
         color: $blue;
         text-transform: none !important;
+    }
+}
+
+.home-form {
+    text-align: center;
+    input[type=email], input[type=tel] {
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        height: 40px;
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+        background-color: transparent !important;
+    }
+
+    input[type=submit] {
+        color: #F1B948 !important;
+        font-family: "Open Sans", sans-serif !important;
+        font-weight: 600;
+        font-size: 18px;
+        border: 1px solid #26325C;
+        border-radius: 0;
+        background-color: #26325C !important;
+        padding: 10px 30px;
+        text-align: center;
+
+        &:hover {
+            color: #26325C !important;
+            background-color: #F1B948 !important;
+            border-color: #F1B948;
+        }
+    }
+}
+
+.social-icons {
+    a {
+        color: $blue;
     }
 }

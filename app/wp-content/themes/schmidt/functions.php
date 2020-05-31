@@ -62,7 +62,7 @@ function wp_ajax_filter_menu() {
             $link = 'href="'.get_the_permalink($post_id).'"';
         ?>
 
-        <article <?php post_class('col-xs-6 col-sm-3 col-md-3 post force-content'); ?>>
+        <article <?php post_class('col-xs-6 col-sm-6 post force-content'); ?>>
             <div class="inner-wrap">
                 <div class="post-content">
                     <div class="content-inner">
@@ -88,4 +88,47 @@ function wp_ajax_filter_menu() {
 		<p>Nenhum resultado encontrado.</p>
 	<?php } 
 	die;
+}
+
+function sc_taglist(){
+    $tags = wp_get_post_tags(get_the_ID(), array('exclude' => array( 44 )));
+	foreach ( $tags as $tag ) {
+		echo '<a href="' . esc_url( get_tag_link( $tag ) ) . '">' . get_tag( $tag )->name . '</a>';
+	}
+}
+add_shortcode('tags', 'sc_taglist');
+
+
+add_filter( 'vc_grid_item_shortcodes', 'get_post_tags_grid_builder' );
+function get_post_tags_grid_builder( $shortcodes ) {
+    $shortcodes['vc_post_content'] = array(
+        'name' => __( 'Post Tags' ),
+        'base' => 'vc_post_content',
+        'category' => __( 'Content' ),
+        'description' => __( 'Show current post content' ),
+        'post_type' => Vc_Grid_Item_Editor::postType(),
+    );
+    return $shortcodes;
+}
+
+add_filter( 'vc_gitem_template_attribute_post_tags', 'vc_gitem_template_attribute_post_tags', 10, 2 );
+function vc_gitem_template_attribute_post_tags( $value, $data ) {
+
+    extract( array_merge( array(
+    'post' => null,
+    'data' => '',
+    ), $data ) );
+
+    $tag_list = '';
+
+    $tags = wp_get_post_tags($post->ID, array('exclude' => array( 44 )));
+    foreach ( $tags as $tag ) {
+        $tag_list .= '<div class="meta-tag">' . get_tag( $tag )->name . '</div>';
+    }
+    return $tag_list;
+} 
+
+add_shortcode( 'vc_post_content', 'vc_post_content_render' );
+function vc_post_content_render() {
+    return '{{post_tags}}';
 }
