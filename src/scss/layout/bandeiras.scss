@@ -252,10 +252,14 @@
         .vc_grid-item-mini {
             box-shadow: 10px 10px 0px -1px rgba(217,217,217,1);
 
+            .vc_gitem-zone-mini {
+                width: 100%;
+            }
+
             > .vc_gitem-zone {
                 background-color: transparent !important;
                 width: 100%;
-                padding-right: 30px;
+                padding-right: 25px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -264,6 +268,10 @@
                     .vc_gitem-col {
                         padding-top: 20px !important;
                         padding-bottom: 0 !important;
+                        padding-left: 25px !important;
+                        > div:last-child {
+                            display: block !important;
+                        }
                     }
                 }
         
@@ -277,14 +285,13 @@
                     color: #F1B948;
                     font-weight: 600;
                     font-size: 18px;
-                    margin-right: 15px;
                 }
         
                 div[class*=post_title]  {
-                    > h4 {
+                    > h4 > a {
                         font-family: $poppins;
-                        font-weight: normal;
-                        font-size: 20px;
+                        font-weight: bold;
+                        font-size: 24px;
                         line-height: 29px;
                         color: #26325C;
                     }
@@ -294,6 +301,30 @@
                     display: none;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #box-rounded-area.vc_custom_1590874390140 {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+
+        .vc_custom_1590874385809 {
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+        }
+
+        .post-bandeiras .vc_grid-item {
+            width: 100% !important;
+
+            .vc_gitem-zone div[class*=post_title] > h4 {
+                font-size: 30px !important;
+            }
+        }
+
+        .bandeira-atuacao .vc_grid-item {
+            height: 120px;
         }
     }
 }

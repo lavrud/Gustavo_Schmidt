@@ -140,7 +140,7 @@ get_header(); ?>
                     $post_type = 'VÍDEOS';
                 }
 
-                echo '<div style="text-align: center;"><a class="btn btn-metro shadow" href="/midia/galeria/" target="_blank" rel="noopener noreferrer" type="button">Voltar à Galeria</a></div>';
+                echo '<div style="text-align: center;"><a class="btn btn-metro shadow" href="/midia/galeria/" rel="noopener noreferrer" type="button">Voltar à Galeria</a></div>';
 
             endwhile; // End the loop.
             ?>

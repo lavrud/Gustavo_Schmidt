@@ -7,7 +7,7 @@ get_header(); ?>
 
 <!-- BANNER-FLAGS -->
 <div class="bnr-tpc">
-    <div class="container">
+    <div class="container" style="margin-top: 77px">
         <h1 class="ttl-tpc">Blog</h1>
     </div>
 </div><!-- banner-hero -->
@@ -44,6 +44,7 @@ get_header(); ?>
                         array(
                             'next_text' => '<span class="meta-nav" aria-hidden="true">Ver próxima <i class="fas fa-arrow-right"></i></span></span><br/>',
                             'prev_text' => '<span class="meta-nav" aria-hidden="true"><i class="fas fa-arrow-left"></i> Voltar à anterior</span><br/>',
+                            'in_same_term' => true,
                         )
                     );
                     echo '</div>';

@@ -49,11 +49,11 @@
 #timeline {
     width: 100%;
     margin-top: 40px;
-    background: linear-gradient(#233F94, #12204A);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
+    background-color: #26325c !important;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-attachment: scroll;
 
     @include celular {
         height: 325px;

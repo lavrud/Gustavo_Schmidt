@@ -69,7 +69,7 @@ body {
 
     .action-col {
         width: 100%;
-        button {
+        button, a {
             width: 100%;
             display: flex;
             align-items: center;
@@ -87,8 +87,8 @@ body {
             z-index: 999;
 
             &:hover {
-                background-color: $yellow;
-                color: $blue;
+                background-color: $blue;
+                color: $yellow;
             }
         }
     }
@@ -303,6 +303,18 @@ h2 {
         color: $yellow;
         text-align: left !important;
         margin-bottom: 10px !important;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+
+    .vc_gitem-post-category-name:hover {
+        background-color: transparent !important;
+        > span {
+            color: $yellow !important;
+            cursor: initial !important;
+        }
     }
 
     .post-title h4 {
@@ -349,5 +361,15 @@ h2 {
 .social-icons {
     a {
         color: $blue;
+    }
+}
+
+.post-grid-home {
+    div[class*=post_title] > h4 > a {
+        font-family: $poppins;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #26325C;
     }
 }

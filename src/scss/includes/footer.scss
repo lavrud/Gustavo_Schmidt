@@ -15,12 +15,16 @@
     }
 
     .address-footer {
-        font-size: 14px;
+        font-size: 18px;
         padding-top: 25px;
         font-family: $open, sans-serif;
         font-weight: $normal;
         text-transform: uppercase;
         color: #12204A;
+
+        strong {
+            font-size: 24px;
+        }
 
         @include celular {
             font-size: 11.5px;
@@ -92,6 +96,8 @@
     }
 
     .copyright {
+        font-family: $open, sans-serif;
+        font-size: 18px;
         color: #12204A;
         text-align: center;
         padding: 3rem 0 1em 0;

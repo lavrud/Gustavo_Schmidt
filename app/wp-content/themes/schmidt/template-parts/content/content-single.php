@@ -15,6 +15,11 @@
 
 	<div class="entry-content" style="padding: 100px 150px;">
 		<?php
+
+		if (get_the_category()[0]->term_id == 7 || get_the_category()[0]->term_id == 12) {
+			echo the_title('<h2 style="font-family: Poppins;font-weight: 500;font-size: 36px;line-height: 41px;text-align: center;color: #26325C;margin-bottom:70px">', '</h2>');
+		}
+
 		the_content(
 			sprintf(
 				wp_kses(
