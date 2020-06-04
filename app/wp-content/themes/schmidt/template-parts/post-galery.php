@@ -7,7 +7,7 @@ get_header(); ?>
 
 <!-- BANNER-FLAGS -->
 <div class="bnr-tpc">
-    <div class="container">
+    <div class="container" style="margin-top: 77px">
         <h1 class="ttl-tpc">Galeria</h1>
     </div>
 </div><!-- banner-hero -->
@@ -81,6 +81,16 @@ get_header(); ?>
         color: #ccc;
         padding: 10px 0;
         height: 150px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        p {
+            width: 49%;
+        }
+
+        p > img {
+            width: 100%;
+        }
     }
 </style>
 <script>

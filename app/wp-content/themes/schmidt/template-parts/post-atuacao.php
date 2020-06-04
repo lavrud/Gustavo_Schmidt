@@ -14,7 +14,11 @@ if (get_the_category()[0]->term_id == 7) {
 <!-- BANNER-FLAGS -->
 <div class="bnr-tpc">
     <div class="container" style="margin-top: 77px">
+<<<<<<< Updated upstream
         <h1 class="ttl-tpc"><?php echo $title; ?></h1>
+=======
+        <h1 class="ttl-tpc"><?php the_title(); ?></h1>
+>>>>>>> Stashed changes
     </div>
 </div><!-- banner-hero -->
 
