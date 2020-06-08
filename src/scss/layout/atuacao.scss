@@ -365,4 +365,25 @@
             }
         }
     }
+
+    .post-template-post-atuacao {
+        #box-rounded-area {
+            .container {
+                padding: 0;
+            }
+            .box-area {
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+                width: 100% !important;
+            }
+        }
+
+        .bnr-tpc .ttl-tpc {
+            font-size: 54px;
+        }
+
+        .entry-content {
+            padding: 30px 15px !important;
+        }
+    }
 }

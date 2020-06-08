@@ -1025,7 +1025,17 @@ h2 {
     margin-bottom: 30px !important; }
     .posts-atuacao .vc_grid-item:nth-child(odd) {
       margin-right: 0px;
-      margin-bottom: 0px; } }
+      margin-bottom: 0px; }
+  .post-template-post-atuacao #box-rounded-area .container {
+    padding: 0; }
+  .post-template-post-atuacao #box-rounded-area .box-area {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width: 100% !important; }
+  .post-template-post-atuacao .bnr-tpc .ttl-tpc {
+    font-size: 54px; }
+  .post-template-post-atuacao .entry-content {
+    padding: 30px 15px !important; } }
 
 .agenda-border {
   padding: 50px;
@@ -1210,6 +1220,10 @@ h2 {
   .first-post-midia .vc_gitem-animated-block {
     width: 100% !important;
     max-height: 300px; }
+    .first-post-midia .vc_gitem-animated-block .vc_gitem-zone {
+      max-height: 300px; }
+      .first-post-midia .vc_gitem-animated-block .vc_gitem-zone img {
+        max-height: 300px; }
   .first-post-midia .vc_grid-item .vc_grid-item-mini > .vc_gitem-zone {
     max-width: 100% !important;
     width: 100% !important;
@@ -1224,7 +1238,28 @@ h2 {
   #midia-page-link .wpb_column:last-child .wpb_content_element {
     margin-bottom: 35px !important; }
   #midia-page-link .midia-page-link a {
-    padding: 25px 35px 25px 10px; } }
+    padding: 25px 35px 25px 10px; }
+  .post-template-post-galery #box-rounded-area .container {
+    padding: 0; }
+  .post-template-post-galery #box-rounded-area .box-area {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width: 100% !important; }
+  .post-template-post-galery .entry-content {
+    padding: 30px 15px !important; }
+  .wpb_image_grid_ul li {
+    position: unset !important;
+    top: unset !important;
+    left: unset !important;
+    max-width: 49% !important; }
+  .post-template-post-blog #box-rounded-area .container {
+    padding: 0; }
+  .post-template-post-blog #box-rounded-area .box-area {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width: 100% !important; }
+  .post-template-post-blog .entry-content {
+    padding: 30px 15px !important; } }
 
 .participe-form input[type=email], .participe-form input[type=tel] {
   border: none;
