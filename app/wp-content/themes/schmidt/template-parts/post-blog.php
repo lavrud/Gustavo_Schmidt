@@ -3,12 +3,18 @@
  * Template Name: Post Blog
  * Template Post Type: post
  */
-get_header(); ?>
+get_header(); 
+
+if (get_the_category()[0]->term_id == 1) {
+    $title = 'Blog';
+} elseif (get_the_category()[0]->term_id == 5) {
+    $title = 'Vídeos';
+} ?>
 
 <!-- BANNER-FLAGS -->
 <div class="bnr-tpc">
     <div class="container" style="margin-top: 77px">
-        <h1 class="ttl-tpc">Blog</h1>
+        <h1 class="ttl-tpc"><?php echo $title; ?></h1>
     </div>
 </div><!-- banner-hero -->
 

@@ -1,8 +1,8 @@
 <?php
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 require_once get_template_directory(  ) . '/class-wp-bootstrap-navwalker.php';
 
@@ -132,3 +132,69 @@ add_shortcode( 'vc_post_content', 'vc_post_content_render' );
 function vc_post_content_render() {
     return '{{post_tags}}';
 }
+
+function Generate_Featured_Image( $image_url, $post_id  ){
+    $upload_dir = wp_upload_dir();
+    $image_data = file_get_contents($image_url);
+    $filename = basename($image_url);
+    if(wp_mkdir_p($upload_dir['path']))     $file = $upload_dir['path'] . '/' . $filename;
+    else                                    $file = $upload_dir['basedir'] . '/' . $filename;
+    file_put_contents($file, $image_data);
+ 
+    $wp_filetype = wp_check_filetype($filename, null );
+    $attachment = array(
+        'post_mime_type' => $wp_filetype['type'],
+        'post_title' => sanitize_file_name($filename),
+        'post_content' => '',
+        'post_status' => 'inherit'
+    );
+    $attach_id = wp_insert_attachment( $attachment, $file, $post_id );
+    require_once(ABSPATH . 'wp-admin/includes/image.php');
+    $attach_data = wp_generate_attachment_metadata( $attach_id, $file );
+    $res1= wp_update_attachment_metadata( $attach_id, $attach_data );
+    $res2= set_post_thumbnail( $post_id, $attach_id );
+}
+
+function set_youtube_as_featured_image($post_id) {  
+    if (get_the_category( $post_id )[0]->term_id == 5) {
+        if(!has_post_thumbnail($post_id)) { 
+
+            $post_array = get_post($post_id, ARRAY_A);
+            $content = $post_array['post_content'];
+
+            preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $content, $match);
+            $youtube_id = $match[1];
+
+            
+            $youtube_thumb_url = 'http://img.youtube.com/vi/' . $youtube_id . '/0.jpg';
+            Generate_Featured_Image($youtube_thumb_url, $post_id);
+        }
+    }
+}
+add_action('save_post', 'set_youtube_as_featured_image');
+
+
+function set_youtube_title_as_post_title($post_id) {
+    global $wpdb;
+
+    if (get_the_category( $post_id )[0]->term_id == 5) {
+        $post_array = get_post($post_id, ARRAY_A);
+        $content = $post_array['post_content'];
+
+        preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $content, $match);
+        $youtube_id = $match[1];
+
+        $json = file_get_contents('http://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=' . $youtube_id . '&format=json');
+        $details = json_decode($json, true);
+
+        $wpdb->query( 
+            $wpdb->prepare("
+                UPDATE wp_posts
+                SET post_title = '".$details['title']."'
+                WHERE ID = ".$post_id."
+                AND post_type = 'post';"
+            )
+        );
+    }
+}
+add_action('save_post', 'set_youtube_title_as_post_title');
